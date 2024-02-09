@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../styles/TestInstructions.css'
 
 export default function TestInstructions() {
+    const navigate = useNavigate();
 
-    const handleStart = () => {
-        window.location.href = '/questions';
-    }
+
 
 
     return (
@@ -22,7 +21,7 @@ export default function TestInstructions() {
             </ol>
 
             <div className='start'>
-                <Link className='btn' onClick={handleStart} >Start </Link>
+                <Link className='btn' to={'/questions'} >Start </Link>
             </div>
 
         </div>

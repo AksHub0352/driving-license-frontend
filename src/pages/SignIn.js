@@ -65,9 +65,7 @@ export default function SignIn() {
     };
 
 
-    const handleSignUpClick = () => {
-        window.location.href = '/signup';
-    }
+
 
 
     return (
@@ -128,8 +126,8 @@ export default function SignIn() {
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="#" variant="body2" component={RouterLink}
-                                    onClick={handleSignUpClick}>
+                                <Link variant="body2" component={RouterLink} to={"/signup"}
+                                >
                                     {"Don't have an account? Sign Up"}
                                 </Link>
                             </Grid>

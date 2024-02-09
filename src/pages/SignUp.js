@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Link from '@mui/material/Link';
-import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import { Navigate, Link as RouterLink, useNavigate } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import toast from "react-hot-toast";
 import Box from '@mui/material/Box';
@@ -67,9 +67,6 @@ export default function SignUp() {
             console.error("Error during Signup:", error);
         }
     };
-    const handleSignInClick = () => {
-        window.location.href = '/login';
-    }
 
     return (
         <ThemeProvider theme={defaultTheme}>
@@ -179,8 +176,8 @@ export default function SignUp() {
 
                         <Grid container justifyContent="flex-end">
                             <Grid item>
-                                <Link href="#" variant="body2" component={RouterLink}
-                                    onClick={handleSignInClick}>
+                                <Link variant="body2" component={RouterLink}
+                                    to="/login">
                                     Already have an account? Sign in
                                 </Link>
                             </Grid>

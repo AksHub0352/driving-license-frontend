@@ -9,6 +9,7 @@ import Questions from './pages/Questions';
 import Result from './pages/Result';
 import EmailVerification from './pages/EmailVerification';
 import { Toaster } from 'react-hot-toast';
+import PrivateRoute from './pages/PrivateRoute';
 
 function App() {
   return (
@@ -27,14 +28,16 @@ function App() {
           <Route path="/" element={<Welcome />} />
         </Routes>
         <Routes>
-          <Route path="/testinstruction" element={<TestInstructions />} />
+          <Route path="/testinstruction" element={<PrivateRoute component={<TestInstructions />} />} />
         </Routes>
         <Routes>
-          <Route path="/questions" element={<Questions />} />
+          <Route path="/questions" element={<PrivateRoute component={<Questions />} />} />
         </Routes>
         <Routes>
-          <Route path="/result" element={<Result />} />
+          <Route path="/result" element={<PrivateRoute component={<Result />} />} />
         </Routes>
+
+
       </Router>
       <Toaster />
     </>
