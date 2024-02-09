@@ -1,0 +1,24 @@
+.container ol li{
+    font-size: 1.4em;
+    color: #1a1111;
+    
+}
+.container{
+    align-self: center;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.start .btn{
+    padding: .2em 1.7em;
+    border: none;
+    border-radius: .1em;
+    font-size: 1.2em;
+    color: #202020;
+    text-decoration: none;
+    background-color: #0bda80;
+}

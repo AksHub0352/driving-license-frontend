@@ -1,0 +1,20 @@
+.timer-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-top: 20px; 
+}
+
+.time-left {
+    color: black;
+    margin-right: 10px;
+    border: 2px solid black; 
+}
+
+.red-clock {
+    color: red;
+    
+    padding: 5px; 
+    border-radius: 5px;
+}

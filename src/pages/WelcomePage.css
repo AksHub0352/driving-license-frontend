@@ -1,0 +1,33 @@
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://c.ndtvimg.com/2022-06/v4t5bgao_car_625x300_17_June_22.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
